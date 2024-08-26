@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./project_3.css" />
+  </head>
+  <body class="bg_grey">
+    <div class="dis_dis">
+      <div class="dis_col" id="outer">
+        <button id="butt" class="bg_green white">Add Task</button>
+        <div class="dis_flex gap_20">
+          <div class="card bg_card" id="">
+            <div class="up dis_flex gap_10">
+              <p class="dot bg_d9"></p>
+              <p class="to_do white">To do</p>
+              <p class="count count_color" id="count_num"></p>
+            </div>
+            <div id="card_one"></div>
+          </div>
+
+          <!-- card_two***************************** -->
+          <div class="card bg_card" id="">
+            <div class="up dis_flex gap_10">
+              <p class="dot bg_two"></p>
+              <p class="to_do white">In progress</p>
+              <p class="count count_color" id="countNumOne"></p>
+            </div>
+            <div id="card_two"></div>
+          </div>
+          <!-- card_three -->
+          <div class="card bg_card" id="">
+            <div class="up dis_flex gap_10">
+              <p class="dot bg_three"></p>
+              <p class="to_do white">Done</p>
+              <p class="count count_color" id="countNumTwo"></p>
+            </div>
+            <div id="card_three"></div>
+          </div>
+          <!-- card_four -->
+          <div class="card bg_card" id="">
+            <div class="up dis_flex gap_10">
+              <p class="dot bg_four"></p>
+              <p class="to_do white">Blocked</p>
+              <p class="count count_color" id="countNumThree"></p>
+            </div>
+            <div id="card_four"></div>
+          </div>
+        </div>
+      </div>
+      <div id="enter_task" class="add_display bg_enter">
+        <p id="text_task" class="white">Enter task</p>
+        <input
+          id="taskname"
+          class="task_name grey bg_enter"
+          type="text"
+          placeholder="Task name..."
+        />
+        <select class="task_name grey bg_enter" id="select_status">
+          <option value="" disable selected hidden>Select status</option>
+          <option class="options" value="To do">To do</option>
+          <option class="options" value="In Progress">In Progress</option>
+          <option class="options" value="Done">Done</option>
+          <option class="options" value="Blocked">Blocked</option>
+        </select>
+        <button id="submit" class="white bg_green">Submit</button>
+      </div>
+    </div>
+
+    <script src="./project_final.js"></script>
+  </body>
+</html>

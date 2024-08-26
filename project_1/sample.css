@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0x;
+}
+.box {
+  width: 1200px;
+}
+.h_60 {
+  height: 60px;
+}
+.h_200 {
+  height: 200px;
+}
+.h_100 {
+  height: 100px;
+}
+/* color */
+.bg_black {
+  background-color: black;
+}
+.bg_gray {
+  background-color: gray;
+}
+.bg_anti  {
+  background-color: antiquewhite;
+}
+.text_color {
+  color: white;
+  text-align: center;
+}

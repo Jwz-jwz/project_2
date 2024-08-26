@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+:root {
+  --green: #00a300;
+  --white: #ffffff;
+  --grey: #1a1a1a;
+  --card_color: #101010;
+  --border_color: #333333;
+  --dot_white: #d9d9d9;
+  --count_color: #999999;
+  --dot_two: #a3a300;
+  --dot_four: #a30000;
+  --enter_bg: #1e1e1e;
+}
+/* bg_color ********************/
+.bg_d9 {
+  background-color: var(--dot_white);
+}
+.bg_two {
+  background-color: var(--dot_two);
+}
+.bg_three {
+  background-color: var(--green);
+}
+.bg_four {
+  background-color: var(--dot_four);
+}
+.bg_grey {
+  background-color: var(--grey);
+}
+.bg_green {
+  background-color: var(--green);
+}
+.bg_enter {
+  background-color: var(--enter_bg);
+}
+.bg_card {
+  background-color: var(--card_color);
+}
+/* color ****************************************** */
+.grey {
+  color: var(--count_color);
+}
+.red {
+  color: var(--dot_four);
+}
+.white {
+  color: var(--white);
+}
+.count_color {
+  color: var(--count_color);
+}
+/* display *****************************************/
+.dis_dis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dis_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dis_flex {
+  display: flex;
+}
+.dis_just {
+  display: flex;
+  flex-direction: column;
+}
+
+/* gap ***************/
+.gap_10 {
+  gap: 10px;
+}
+.gap_20 {
+  gap: 20px;
+}
+.gap_8 {
+  gap: 8px;
+}
+#outer {
+  position: absolute;
+  z-index: 0;
+}
+#butt {
+  width: 109px;
+  height: 44px;
+  border-radius: 4px;
+  margin-top: 52px;
+  margin-left: 1071px;
+  padding: 0, 20px, 0, 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.36px;
+  border: none;
+}
+
+.card {
+  width: 280px;
+  height: 672px;
+  border: 1px solid var(--border_color);
+  border-radius: 12px;
+  margin-top: 24px;
+  padding: 20px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 12.5px;
+}
+.to_do {
+  width: 200px;
+  height: 22px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+.up {
+  width: 240px;
+  height: 42px;
+  align-items: center;
+}
+.count {
+  width: 8px;
+  height: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.52px;
+}
+#down {
+  width: 240px;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.todo_list {
+  width: 140px;
+  height: 30px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14.52px;
+  margin-top: 15px;
+}
+.pen_icon {
+  width: 16px;
+  height: 16px;
+}
+#enter_task {
+  width: 370px;
+  height: 376px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 228px;
+  border-radius: 16px;
+  padding: 40px;
+}
+#text_task {
+  width: 120px;
+  height: 29px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.05px;
+}
+.task_name {
+  width: 290px;
+  height: 43px;
+  padding: 12px;
+  border: 1px solid var(--border_color);
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+}
+#submit {
+  width: 290px;
+  height: 44px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 100px;
+}
+.add_display {
+  display: none;
+}

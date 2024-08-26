@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 350px;
+  height: 150px;
+  border: 1px dotted green;
+  text-align: center;
+}
+
+.one {
+  display: inline-block;
+  background-color: orange;
+}
+
+p {
+  margin: 5px;
+  background-color: green;
+  color: white;
+}

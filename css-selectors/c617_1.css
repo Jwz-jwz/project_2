@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.box {
+  width: 350px;
+  height: 150px;
+  border: 1px dotted green;
+  margin: 10px;
+  text-align: center;
+}
+
+.inline {
+  display: inline;
+  background-color: green;
+  color: white;
+}

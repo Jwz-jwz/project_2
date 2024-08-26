@@ -1,0 +1,115 @@
+window.GoGoBanner1719882800 = (function () {
+    var $window = $(window), responsiveBanners = [], oldWidth = $window.width()
+        , resizeTimer;
+
+    function setBannerFrame($v, width, height, close) {
+        var
+            gg_ban_width = Math.floor(width),
+            gg_ban_height = Math.floor(height),
+            gg_ban_id = $v.attr('gg_ban_id');
+
+        if (!close) {
+            var $content = $("<div>");
+            $content
+                .attr("id", "gg_bn_" + gg_ban_id)
+                .attr("style", 'width:' + gg_ban_width + 'px;height:' + gg_ban_height + 'px;display:block;border:none;margin:0;padding:0;position:relative;visibility:visible;')
+                .addClass("ggbannerins")
+            ;
+
+            $content.append('<div id="gg_bn_dlg_' + gg_ban_id + '" style="width:' + gg_ban_width + 'px;height:' + gg_ban_height + 'px;position:absolute;"></div>'
+                + '<div style="width:' + gg_ban_width + 'px;height:' + gg_ban_height + 'px;display:block;border:none;margin:0;padding:0;position:relative;visibility:visible;" id="aswift_1_anchor">'
+                + '<iframe src="https://bn.gogo.mn/' + gg_ban_id + '/' + gg_ban_width + '/' + gg_ban_height + '/bn.html" width="' + gg_ban_width + '" scrolling="no" height="' + gg_ban_height + '" frameborder="0" name="gg_ban_' + gg_ban_id + '" id="gg_ban_' + gg_ban_id + '" vspace="0" marginheight="0" marginwidth="0" hspace="0" allowtransparency="true" style="left:0;position:absolute;top:0;">'
+                + '</iframe>'
+                + '</div>');
+
+            $v.empty().append($content);
+
+            $v.css({
+                width: gg_ban_width + "px",
+                height: gg_ban_height + "px",
+                overflow: 'hidden'
+            });
+        }
+        else {
+            $v.remove()
+        }
+
+        $v.addClass("gg_ban_done");
+    }
+
+    function bannerRatio($v) {
+        return $v.attr('gg_ban_width') * 1.0 / $v.attr('gg_ban_height');
+    }
+
+    function setBanner($v, close) {
+        $v.data("close", close);
+        if ($v.hasClass("gg_ban_responsive")) {
+            responsiveBanners.push($v);
+            var width;
+
+            if($v.data("responsive-mode") === "parent") {
+                width = $v.parent().width();
+            }
+            else {
+                width = $window.width();
+            }
+
+            setBannerFrame($v, width, width / bannerRatio($v), close);
+        }
+        else {
+            setBannerFrame($v, $v.attr('gg_ban_width'), $v.attr('gg_ban_height'), close);
+        }
+    }
+
+    function buildbanners() {
+                setBanner($(".gg_ban_div[gg_ban_id='news-b3']"), false);
+                setBanner($(".gg_ban_div[gg_ban_id='news-b4']"), true);
+                setBanner($(".gg_ban_div[gg_ban_id='news-b2-m']"), false);
+                setBanner($(".gg_ban_div[gg_ban_id='news-b3-m']"), false);
+                setBanner($(".gg_ban_div[gg_ban_id='news-b4-m']"), true);
+        
+        oldWidth = $window.width();
+        $window.resize(function() {
+            if(resizeTimer) {
+                window.clearTimeout(resizeTimer);
+                resizeTimer = null;
+            }
+            resizeTimer = setTimeout(function() {
+                var newWidth = $window.width();
+
+                if(oldWidth != newWidth) {
+                    oldWidth = newWidth;
+                    onWindowWidthChange();
+                }
+                resizeTimer = null;
+            }, 1000);
+        });
+    }
+
+    function onWindowWidthChange(force) {
+        if(typeof force === 'undefined') {
+            force = false;
+        }
+        $.each(responsiveBanners, function(i, $v) {
+            var width;
+            if($v.data("responsive-mode") === "parent") {
+               width = $v.parent().width();
+               if(!force && width === $v.width()) {
+                   return true;
+               }
+            }
+            else {
+                width = $window.width();
+            }
+            setBannerFrame($v, width, width / bannerRatio($v), $v.data("close"));
+        });
+    }
+
+    return {
+        buildbanners: buildbanners,
+        setBanner: setBanner,
+        resize: onWindowWidthChange
+    };
+})();
+
+window.GoGoBanner1719882800.buildbanners();

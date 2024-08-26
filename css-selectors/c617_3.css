@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(77, 77, 233);
+}
+h2 {
+  color: white;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.outer {
+  width: 800px;
+  height: 400px;
+}
+
+.inner {
+  width: 600px;
+  height: 275px;
+  background-color: white;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  /* border: 3px solid white; */
+  display: inline-block;
+  margin: 30px;
+  box-sizing: border-box;
+}
+.line1,
+.line2,
+.line3,
+.line4 {
+  color: white;
+}
+
+.line1_1 {
+  width: 49.2%;
+  height: 50px;
+  background-color: rgb(62, 98, 151);
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+.line1_2 {
+  width: 24.2%;
+  height: 50px;
+  background-color: rgb(42, 139, 138);
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.line1_3 {
+  width: 24.2%;
+  height: 50px;
+  background-color: rgba(164, 95, 164, 0.325);
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.line2 {
+  margin-top: 3px;
+}
+.line2_1 {
+  width: 24.2%;
+  height: 50px;
+  background-color: red;
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+.line2_2 {
+  width: 24.2%;
+  height: 50px;
+  background-color: orange;
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+.line2_3 {
+  width: 24.2%;
+  height: 50px;
+  background-color: yellow;
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+.line2_4 {
+  width: 24.2%;
+  height: 50px;
+  background-color: rgb(75, 152, 124);
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.line3 {
+  margin-top: 3px;
+}
+.line3_1 {
+  width: 24.2%;
+  height: 50px;
+  background-color: rgb(21, 106, 69);
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+.line3_2 {
+  width: 49.1%;
+  height: 50px;
+  background-color: rgb(180, 117, 161);
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.line3_3 {
+  width: 24.2%;
+  height: 50px;
+  background-color: green;
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.line4 {
+  margin-top: 3px;
+}
+.line4 {
+  width: 98.8%;
+  height: 50px;
+  background-color: rgb(136, 77, 171);
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+
+p {
+  color: white;
+  margin-left: 30px;
+}

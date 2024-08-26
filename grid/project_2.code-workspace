@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../project_2"
+	},
+	{
+		"path": "../responsive_design"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "grid"
+  }
+}

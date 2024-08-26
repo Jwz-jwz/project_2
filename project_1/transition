@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./c_625.css">
+</head>
+<body>
+  <div class="border">
+    <div class="box"></div>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./c_625.css">
+</head>
+<body>
+  <div class="circle">
+  </div>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- hover-ni buh element deer avch boldog. 
+
+transition hiihdee transitionoo tuhain element deeree bichdeg. Not hover!!!
+
+transition property: hesegtee yu yug oorchilson deeree transition hiij baigaagaa bichdeg. bugd bol all gene 
+
+transition duration: hugatsaag ni zaa ogdog
+
+transition timing-function:
+        linear-jigd hodoldog
+        ease-
+        ease-in
+        ease-out
+        ease-in-out
+        steps
+        cubic
+transition-delay:tuhai elementiin oorchlolt ehleh hugatsaag zaaj bgaa(mouse ochsonoos her hugatsaanii daraa transition ehleh, mouse holdsonoos her hugatsaanii daraa transition alga bolohiig zaadag)
+
+
+transition short hand_ (property(all) duration function delay)
+        ->

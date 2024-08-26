@@ -1,0 +1,45 @@
+p{
+    color: blue;
+}
+
+#idselector{
+    color: yellow;
+}
+
+.class{
+    color: green;
+}
+
+div span{
+    color: red;
+}
+
+.a{
+    color: black;
+}
+
+.b{
+    color: red;
+    font-size: large;
+}
+
+.c{
+    color: red;
+    font-size: larger;
+}
+
+.d{
+    color: red;
+    font-size: xx-large;
+}
+ 
+.dd{
+font-weight: bold;
+}
+
+.aa{
+    border-style: groove;
+    border-color: red;
+}
+
+ 

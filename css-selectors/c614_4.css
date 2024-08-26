@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.outer{
+    width: 400px;
+    height: 410px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.box1{
+    width: 100%;
+    height: 170px;
+    /* border: 1px solid red; */
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    padding: 15px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.second{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.button{
+    width: 100%;    
+    height: 70px;
+    padding: 15px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+.button2{
+    margin-left: 20px;
+}
+
+.box2{
+    width: 100%;
+    height: 150px;
+    border: 1px dotted blue;
+}
+
+.box2_1{
+    width: 350px;
+    height: 20px;
+    border: 1px solid rgb(182, 180, 180);
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.bb{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(168, 168, 168);
+}
+.box2_2{
+    width: 350px;
+    height: 20px;
+    border: 1px solid rgb(182, 180, 180);
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.cc{
+    width: 40%;
+    height: 100%;
+    background-color: green;
+}
+.box2_3{
+    width: 350px;
+    height: 20px;
+    border: 1px solid rgb(182, 180, 180);
+    background-color: aqua;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.dd{
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+}
+.box2_4{
+    width: 350px;
+    height: 20px;
+    border: 1px solid rgb(182, 180, 180);
+    background-color: rgba(214, 214, 171, 0.851);
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.ee{
+    width: 20%;
+    height: 100%;
+    background-color: orange;
+}
